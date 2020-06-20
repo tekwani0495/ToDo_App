@@ -2,8 +2,8 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 //Connect to database
-//mongoose.Promise = global.Promise;
-//mongoose.connect('mongodb+srv://test:test@todo-tozum.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true});
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb+srv://<username>:<password>@todo-tozum.mongodb.net/<dbname>?retryWrites=true&w=majority', {useNewUrlParser: true});
 
 //create schema- this is like blueprint of database
 var todoSchema = new mongoose.Schema({
